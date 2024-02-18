@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 /**
  * Landing page with a simple gradient background and a hero asset.
@@ -56,9 +57,7 @@ const Home: NextPage = () => {
               </p>
 
               <div className={styles.heroCtaContainer}>
-                <Link className={styles.heroCta} href="#">
-                  Get Started
-                </Link>
+                <ConnectWallet theme="dark" btnTitle="Connect Wallet" />
                 <Link
                   className={styles.secondaryCta}
                   href="#"
