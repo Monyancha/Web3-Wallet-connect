@@ -60,6 +60,7 @@ const Home: NextPage = () => {
                 <ConnectWallet theme="dark" btnTitle="Connect Wallet" />
                 <Link
                   className={styles.secondaryCta}
+                  style={{margin: "10px"}}
                   href="#"
                   target="_blank"
                 >
